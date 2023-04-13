@@ -1,0 +1,6 @@
+{
+    "screen_width": 1200,
+    "screen_height": 800,
+    "background_color": [230, 230, 230],
+    "ship_speed_factor": 1.5
+}
