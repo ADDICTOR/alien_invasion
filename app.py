@@ -1,5 +1,6 @@
 # Created on iPad.
 import sys
+import json
 import pygame
 
 from modules.ship import Ship

@@ -1,3 +1,4 @@
+"""游戏功能模块"""
 import sys
 
 import pygame
@@ -19,7 +20,7 @@ def check_events(ship):
                 ship.moving_right = False
             elif event.key == pygame.K_LFET:
                 ship.moving_left = False
-         
+
 
 def update_screen(color, screen, ship):
     """更新屏幕上的图像，并切换到新屏幕"""
