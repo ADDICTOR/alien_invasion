@@ -3,6 +3,8 @@ import sys
 import json
 import pygame
 
+from pygame.sprite import Group
+
 from modules.ship import Ship
 import modules.game_functions as gf
 
@@ -18,17 +20,17 @@ def main():
 
     # 创建飞船对象
     ship = Ship(settings, screen)
-
-    # 背景颜色
-    background_color = tuple(settings["background_color"])
+    bullets = Group()
 
     # 开始游戏主循环
     while True:
         # 监视键盘和鼠标事件
-        gf.check_events(ship)
+        gf.check_events(settings, screen, ship, bullets)
         ship.update()
+        gf.update_bullets(bullets)
+        
         # 更新屏幕
-        gf.update_screen(background_color,screen,ship)
+        gf.update_screen(settings, screen, ship, bullets)
 
 if __name__ == "__main__":
     main()
