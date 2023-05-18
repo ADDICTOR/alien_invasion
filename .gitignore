@@ -1,0 +1,5 @@
+config.ini
+
+*.log
+
+modules/__pycache__/

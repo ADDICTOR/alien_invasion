@@ -3,7 +3,7 @@ import sys
 
 import pygame
 
-from bullet import Bullet
+from .bullet import Bullet
 
 def check_keydown_events(event, settings, screen, ship, bullets):
     if event.key == pygame.K_RIGHT:
