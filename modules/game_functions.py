@@ -8,7 +8,7 @@ from .bullet import Bullet
 def check_keydown_events(event, settings, screen, ship, bullets):
     if event.key == pygame.K_RIGHT:
         ship.moving_right = True
-    elif event.key == pygame.K_LFET:
+    elif event.key == pygame.K_LEFT:
         ship.moving_left = True
     elif event.key == pygame.K_SPACE:
         fire_bullet(settings, screen, ship, bullets)
@@ -16,7 +16,7 @@ def check_keydown_events(event, settings, screen, ship, bullets):
 def check_keyup_events(event, ship):
     if event.key == pygame.K_RIGHT:
         ship.moving_right = False
-    elif event.key == pygame.K_LFET:
+    elif event.key == pygame.K_LEFT:
         ship.moving_left = False
 
 def check_events(settings, screen, ship, bullets):

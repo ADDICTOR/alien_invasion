@@ -1,5 +1,4 @@
 # Created on iPad.
-import sys
 import json
 import pygame
 
