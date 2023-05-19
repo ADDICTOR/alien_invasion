@@ -3,9 +3,17 @@
     "screen_height": 800,
     "background_color": [230, 230, 230],
     "ship_speed_factor": 1.5,
-    "bullet_speed_factor": 1,
+    "bullet_speed_factor": 2,
     "bullet_width": 3,
     "bullet_height": 15,
     "bullet_color": [60, 60, 60],
-    "bullet_allowed": 3
+    "bullet_allowed": 3,
+    "alien_speed_factor": 1,
+    "fleet_drop_speed": 10,
+    "fleet_direction": 1,
+    "ship_limit": 3,
+    "speedup_scale": 1.1,
+    "ship_speed_factor_dynamic": 1.5,
+    "bullet_speed_factor_dynamic": 2,
+    "alien_speed_factor_dynamic": 1
 }
