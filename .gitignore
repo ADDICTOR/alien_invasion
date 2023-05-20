@@ -2,4 +2,4 @@ config.ini
 
 *.log
 
-modules/__pycache__/
+__pycache__
